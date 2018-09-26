@@ -39,16 +39,16 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
+    "*.{js,json,css,styl}": [
+      "prettier-eslint --write",
       "git add"
     ],
     "*.vue": [
-      "vue-cli-service lint",
+      "prettier-eslint --write",
       "git add"
     ],
     "src/**": [
-      "eslint",
+      "prettier-eslint --write",
       "git add"
     ]
   }

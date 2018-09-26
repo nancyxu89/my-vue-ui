@@ -1,13 +1,17 @@
 <!-- @format -->
 
 <template>
-    <div>header</div>
+    <div class="app-header">header</div>
 </template>
 <script>
 export default {
-  data() {
-    return {}
-  }
+	data() {
+		return {}
+	},
+	mounted() {}
 }
 </script>
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.app-header
+   background red
+</style>
