@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint",
     "eslint-fix": "eslint src/**/**/*.vue --fix",
     "format-code": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.vue\" \"*.config.js\" \".eslintrc.js\"",
+    "precommit": "lint-staged",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e"
   },
@@ -27,7 +28,8 @@
     "chai": "^4.1.2",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-prettier": "^2.6.2",
-    "lint-staged": "^7.2.2",
+    "husky": "^1.0.0",
+    "lint-staged": "^7.3.0",
     "prettier-eslint-cli": "^4.7.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
@@ -43,6 +45,10 @@
     ],
     "*.vue": [
       "vue-cli-service lint",
+      "git add"
+    ],
+    "src/**": [
+      "eslint",
       "git add"
     ]
   }
