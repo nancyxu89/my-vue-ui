@@ -7,6 +7,7 @@ import Layout from './views/Layout.vue'
 import Home from './views/Home.vue'
 import Header from './components/header.vue'
 import Drag from './views/Drag.vue'
+import CssModule from './views/CssModule.vue'
 
 Vue.use(Router)
 
@@ -32,6 +33,11 @@ export default new Router({
 					path: 'about',
 					name: 'about',
 					component: () => import('./views/About.vue')
+				},
+				{
+					path: 'cssModule',
+					name: 'CssModule',
+					component: CssModule
 				}
 			]
 		},

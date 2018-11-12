@@ -145,7 +145,7 @@ export default {
 	}
 }
 </script>
-<style lang="stylus" scoped>
+<style lang="stylus" rel="stylesheet/stylus" type="text/stylus" scoped>
 .el-menu-vertical-demo:not(.el-menu--collapse)
     width 200px
     min-height 400px
